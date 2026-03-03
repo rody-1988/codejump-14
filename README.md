@@ -70,7 +70,7 @@ PC時は `flex` で左右に分割し、サイドバーを固定。
 ---
 
 ## 📂 フォルダ構造
-```text
+```
 root/
  ├─ index.html
  ├─ img/
@@ -80,3 +80,4 @@ root/
  └─ css/
      ├─ style.css （自動生成）
      └─ style.css.map （デバッグ用）
+```

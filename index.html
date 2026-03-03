@@ -3,39 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>タイトル</title>
+    <title>明るいHOUSE</title>
     <!-- リセットCSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/ßdestyle.css@1.0.15/destyle.css"
     />
     <!-- ファビコン -->
-    <link rel="icon" href="img/favicon.ico" />
-
+    <link rel="icon" href="../img/favicon.ico" />
+    <!-- Googlefont -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+    </style>
+    <!-- リセットCSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header id="header" class="header">
-      <h1>
-        <a href="#"><img src="" alt="" /></a>
-      </h1>
-    </header>
+    <div class="container">
+      <header id="header" class="l-sidaber">
+        <h1 class="l-sideber__logo">
+          <a href="#"><img src="/img/logo.svg" alt="logo" /></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">私たちについて</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#">商品情報</a></li>
+            <li><a href="#">展示会</a></li>
+            <li><a href="#">暮らしの日記</a></li>
+            <li><a href="#">会社概要</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <section class="container">
-        <div class="inner"></div>
-      </section>
-      <section class="container">
-        <div class="inner"></div>
-      </section>
-      <section class="container">
-        <div class="inner"></div>
-      </section>
-    </main>
-
-    <footer id="footer" class="footer">
-      <small></small>
-    </footer>
+      <main class="l-main">
+        <section class="p-hero">
+          <div class="p-hero__video">
+            <video src="video/video.mp4"></video>
+          </div>
+        </section>
+        <section class="p-project">
+          <div class="inner"></div>
+        </section>
+        <section class="p-feature">
+          <div class="inner"></div>
+        </section>
+        <section class="p-flow">
+          <div class="inner"></div>
+        </section>
+        <section class="p-contact">
+          <div class="inner"></div>
+        </section>
+      </main>
+      <footer id="footer" class="footer">
+        <small></small>
+      </footer>
+    </div>
+    <!-- container       -->
   </body>
 </html>
