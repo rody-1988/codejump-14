@@ -7,39 +7,45 @@
     <!-- リセットCSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/ßdestyle.css@1.0.15/destyle.css"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
     />
     <!-- ファビコン -->
-    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico" />
     <!-- Googlefont -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
     </style>
-    <!-- リセットCSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <div class="container">
-      <header id="header" class="l-sidaber">
+      <header id="header" class="l-sidebar">
         <h1 class="l-sideber__logo">
-          <a href="#"><img src="/img/logo.svg" alt="logo" /></a>
+          <a href="#"><img src="img/logo.svg" alt="logo" /></a>
         </h1>
-        <nav>
-          <ul>
-            <li><a href="#">私たちについて</a></li>
-            <li><a href="#">サービス</a></li>
-            <li><a href="#">商品情報</a></li>
-            <li><a href="#">展示会</a></li>
-            <li><a href="#">暮らしの日記</a></li>
-            <li><a href="#">会社概要</a></li>
+        <nav class="p-nav">
+          <ul class="p-nav-list">
+            <li class="p-nav__item"><a href="#">私たちについて</a></li>
+            <li class="p-nav__item"><a href="#">サービス</a></li>
+            <li class="p-nav__item"><a href="#">商品情報</a></li>
+            <li class="p-nav__item"><a href="#">展示会</a></li>
+            <li class="p-nav__item"><a href="#">暮らしの日記</a></li>
+            <li class="p-nav__item"><a href="#">会社概要</a></li>
           </ul>
         </nav>
-        <nav>
-          <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
+        <nav class="p-sns">
+          <ul class="p-sns__list">
+            <li class="p-sns__item">
+              <a target="_blank" href="https://x.com/">Twitter</a>
+            </li>
+            <li class="p-sns__item">
+              <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+            </li>
+            <li class="p-sns__item">
+              <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -47,24 +53,38 @@
       <main class="l-main">
         <section class="p-hero">
           <div class="p-hero__video">
-            <video src="video/video.mp4"></video>
+            <video
+              src="video/video.mp4"
+              loop
+              muted
+              autoplay
+              playsinline
+            ></video>
           </div>
         </section>
         <section class="p-project">
-          <div class="inner"></div>
+          <div class="p-project__inner">
+            <h2 class="p-project__title sub-title"></h2>
+          </div>
         </section>
         <section class="p-feature">
-          <div class="inner"></div>
+          <div class="p-feature__inner">
+            <h2 class="p-feature__title sub-title"></h2>
+          </div>
         </section>
         <section class="p-flow">
-          <div class="inner"></div>
+          <div class="p-flow__inner">
+            <h2 class="p-flow__title sub-title"></h2>
+          </div>
         </section>
         <section class="p-contact">
-          <div class="inner"></div>
+          <div class="p-contact__inner">
+            <h2 class="p-contact__title sub-title"></h2>
+          </div>
         </section>
       </main>
-      <footer id="footer" class="footer">
-        <small></small>
+      <footer id="footer" class="p-footer">
+        <small>&copy; 明るいハウス</small>
       </footer>
     </div>
     <!-- container       -->
