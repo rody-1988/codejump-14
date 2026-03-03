@@ -1,0 +1,73 @@
+@charset "utf-8";
+// ===================================
+// 1. 変数
+// ===================================
+// サイトごとにここを書き換えるだけでOK！
+$main-color: #333; // メインの色
+$sub-color: #fff; // サブの色
+$bg-color: #f7f7f7; // 背景色
+$layout-width: 1000px; // 今回のCOFFEEサイトは1000px
+$inner-padding: 16px; // 左右の余白
+$breakpoint: 767px; // スマホの境目
+
+// ===================================
+// 2. ミックスイン（魔法の呪文）
+// ===================================
+// これを書くと、いちいち長いメディアクエリを書かなくて済む
+@mixin sp {
+  @media screen and (max-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+// ===================================
+// 3. 基本設定（Base）
+// ===================================
+body {
+  font-size: 16px;
+  color: $main-color;
+  font-family: "Noto Sans JP", "Noto Sans", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+// ===================================
+// 4. 共通パーツ（BEMルール）
+// ===================================
+.inner {
+  width: 100%;
+  max-width: $layout-width;
+  margin: 0 auto;
+  padding: 0 $inner-padding;
+}
+
+.container {
+  display: flex;
+  // スマホの時は縦並びにする魔法
+  @include sp {
+    flex-direction: column;
+  }
+}
+
+// ===================================
+// 5. 各セクション（ここからコーディング！）
+// ===================================
+.header {
+  width: 100%;
+  // ネスト（入れ子）を使って書く
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // スマホ版の調整も同じ場所に書ける！
+  @include sp {
+    background-color: $bg-color;
+  }
+}
