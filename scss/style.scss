@@ -3,19 +3,19 @@
 // 1. 変数
 // ===================================
 // サイトごとにここを書き換えるだけでOK！
-$main-color: #333; // メインの色
-$sub-color: #fff; // サブの色
-$bg-color: #f7f7f7; // 背景色
-$layout-width: 1000px; // 今回のCOFFEEサイトは1000px
-$inner-padding: 16px; // 左右の余白
-$breakpoint: 767px; // スマホの境目
+$color-main: #333; // メインの色
+$color-sub: #fff; // サブの色
+$size-inner: 900px; // 今回のサイトは900px
+$size-sidebar: 300px; //サイドメニューの300px
+$space-inner: 16px; // 左右の余白
+$breakpoint-sp: 960px; // スマホの境目
 
 // ===================================
 // 2. ミックスイン（魔法の呪文）
 // ===================================
 // これを書くと、いちいち長いメディアクエリを書かなくて済む
 @mixin sp {
-  @media screen and (max-width: #{$breakpoint}) {
+  @media screen and (max-width: #{$breakpoint-sp}) {
     @content;
   }
 }
@@ -25,7 +25,7 @@ $breakpoint: 767px; // スマホの境目
 // ===================================
 body {
   font-size: 16px;
-  color: $main-color;
+  color: $color-main;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.6;
 }
@@ -39,14 +39,7 @@ img {
 // ===================================
 // 4. 共通パーツ（BEMルール）
 // ===================================
-.inner {
-  width: 100%;
-  max-width: $layout-width;
-  margin: 0 auto;
-  padding: 0 $inner-padding;
-}
-
-.container {
+.l-container {
   display: flex;
   // スマホの時は縦並びにする魔法
   @include sp {
@@ -54,20 +47,38 @@ img {
   }
 }
 
-// ===================================
-// 5. 各セクション（ここからコーディング！）
-// ===================================
-.header {
+.l-sidebar {
+  width: $size-sidebar;
+}
+.l-main {
+  margin-left: $size-sidebar;
+}
+
+.l-inner {
   width: 100%;
-  // ネスト（入れ子）を使って書く
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: $space-inner;
+  margin: 0 auto;
+}
+// ===================================
+// header（サイドメニュー）
+// ===================================
+.l-sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+
+  &__logo {
+    width: 200px;
+    padding-top: 40px;
   }
 
   // スマホ版の調整も同じ場所に書ける！
   @include sp {
-    background-color: $bg-color;
   }
 }
