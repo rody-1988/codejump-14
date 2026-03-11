@@ -41,19 +41,23 @@ img {
 // ===================================
 .l-container {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  // スマホの時は縦並びにする魔法
+  // スマホ版の調整も同じ場所に書ける！
   @include sp {
+    width: 100%;
     flex-direction: column;
   }
 }
 
 .l-sidebar {
-  width: $size-sidebar;
+  // width: $size-sidebar;
+  flex-shrink: 0;
 }
-.l-main {
+.l-content {
+  flex: 1;
   margin-left: $size-sidebar;
+  @include sp {
+    margin-left: 0;
+  }
 }
 
 .l-inner {
@@ -61,14 +65,12 @@ img {
   max-width: $size-inner;
   margin: 0 auto;
 }
-.footer {
-  margin-top: auto;
-  margin-left: $size-sidebar;
-}
+
 // ===================================
 // header（サイドメニュー）
 // ===================================
-.l-sidebar {
+.header {
+  width: $size-sidebar;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -76,23 +78,29 @@ img {
   padding: 0 40px;
   position: fixed;
   top: 0;
-  left: 0;
   font-size: 14px;
   z-index: 100;
   background-color: $color-sub;
+
+  @include sp {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
 
   &__logo {
     width: 200px;
     padding-top: 40px;
     padding-bottom: 20px;
-  }
-  .nav__item,
-  .sns__item {
-    padding-bottom: 20px;
-  }
 
-  // スマホ版の調整も同じ場所に書ける！
-  @include sp {
+    @include sp {
+      padding: 20px;
+    }
+  }
+  &-nav__item,
+  &-sns__item {
+    padding-bottom: 20px;
   }
 }
 // ===================================
@@ -103,8 +111,16 @@ img {
     width: 100%;
     height: 100vh;
     video {
+      position: fixed;
+      top: -200px;
       height: auto;
       z-index: -10;
     }
   }
+}
+// ===================================
+// project
+// ===================================
+.project {
+  
 }
