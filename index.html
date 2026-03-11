@@ -20,179 +20,201 @@
   </head>
 
   <body>
-    <div class="l-container">
-      <header id="header" class="l-sidebar">
-        <h1 class="l-sidebar__logo">
-          <a href="#"><img src="img/logo.svg" alt="logo" /></a>
-        </h1>
-        <nav class="p-nav">
-          <ul class="p-nav__list">
-            <li class="p-nav__item"><a href="#">私たちについて</a></li>
-            <li class="p-nav__item"><a href="#">サービス</a></li>
-            <li class="p-nav__item"><a href="#">商品情報</a></li>
-            <li class="p-nav__item"><a href="#">展示会</a></li>
-            <li class="p-nav__item"><a href="#">暮らしの日記</a></li>
-            <li class="p-nav__item"><a href="#">会社概要</a></li>
-          </ul>
-        </nav>
-        <nav class="p-sns">
-          <ul class="p-sns__list">
-            <li class="p-sns__item">
-              <a target="_blank" href="https://x.com/">Twitter</a>
-            </li>
-            <li class="p-sns__item">
-              <a target="_blank" href="https://www.facebook.com/">Facebook</a>
-            </li>
-            <li class="p-sns__item">
-              <a target="_blank" href="https://www.instagram.com/">Instagram</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main class="l-main">
-        <section class="p-hero">
-          <div class="p-hero__video">
-            <video
-              src="video/video.mp4"
-              loop
-              muted
-              autoplay
-              playsinline
-            ></video>
-          </div>
-        </section>
-        <section class="p-project">
-          <div class="p-project__inner l-inner">
-            <h2 class="p-project__title sub-title">建築事例を紹介</h2>
-            <ul class="p-project__list">
-              <li class="p-project__item">
-                <a href="#"
-                  ><img src="img/project1.jpg" alt="PROJECT_01" />PROJECT_01</a
-                >
+    <div class="container">
+      <div class="sidebar">
+        <header id="header" class="header">
+          <h1 class="header__logo">
+            <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+          </h1>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a href="#">私たちについて</a></li>
+              <li class="header-nav__item"><a href="#">サービス</a></li>
+              <li class="header-nav__item"><a href="#">商品情報</a></li>
+              <li class="header-nav__item"><a href="#">展示会</a></li>
+              <li class="header-nav__item"><a href="#">暮らしの日記</a></li>
+              <li class="header-nav__item"><a href="#">会社概要</a></li>
+            </ul>
+          </nav>
+          <nav class="header-nav__sns">
+            <ul class="header-nav-sns__list">
+              <li class="header-nav-sns__item">
+                <a target="_blank" href="https://x.com/">Twitter</a>
               </li>
-              <li class="p-project__item">
-                <a href="#"
-                  ><img src="img/project2.jpg" alt="PROJECT_02" />PROJECT_02</a
-                >
+              <li class="header-nav-sns__item">
+                <a target="_blank" href="https://www.facebook.com/">Facebook</a>
               </li>
-              <li class="p-project__item">
-                <a href="#"
-                  ><img src="img/project3.jpg" alt="PROJECT_03" />PROJECT_03</a
-                >
-              </li>
-              <li class="p-project__item">
-                <a href="#"
-                  ><img src="img/project4.jpg" alt="PROJECT_04" />PROJECT_04</a
+              <li class="header-nav-sns__item">
+                <a target="_blank" href="https://www.instagram.com/"
+                  >Instagram</a
                 >
               </li>
             </ul>
-          </div>
-        </section>
-        <section class="p-feature">
-          <div class="p-feature__inner l-inner">
-            <h2 class="p-feature__title sub-title">明るいHOUSEの特徴</h2>
-            <ul class="p-feature__list">
-              <li class="p-feature__item">
-                <a href="#">design</a>
-                <h3 class="p-feature__item-title">デザイン</h3>
-                <p>テキストテキストテキスト</p>
-              </li>
-              <li class="p-feature__item">
-                <a href="#">qualiy</a>
-                <h3 class="p-feature__item-title">性能</h3>
-                <p>テキストテキストテキスト</p>
-              </li>
-              <li class="p-feature__item">
-                <a href="#">support</a>
-                <h3 class="p-feature__item-title">サポート</h3>
-                <p>テキストテキストテキスト</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="p-flow">
-          <div class="p-flow__inner l-inner">
-            <h2 class="p-flow__title sub-title">家ができるまでの流れ</h2>
-            <p>お問い合わせいただいてから、家が完成するまでの流れです。</p>
-            <div class="p-flow__wrapper">
-              <ol class="p-flow__step">
-                <li class="p-flow__step-item">ヒアリング</li>
-                <li class="p-flow__step-item">プラン提案</li>
-                <li class="p-flow__step-item">契約</li>
-                <li class="p-flow__step-item">着工</li>
-                <li class="p-flow__step-item">完成</li>
-              </ol>
-              <dl class="p-flow__desc">
-                <dt class="p-flow__desc-title">ヒアリング</dt>
-                <dd class="p-flow__desc-text">
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt class="p-flow__desc-title">プラン提案</dt>
-                <dd class="p-flow__desc-text">
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt class="p-flow__desc-title">契約</dt>
-                <dd class="p-flow__desc-text">
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt class="p-flow__desc-title">着工</dt>
-                <dd class="p-flow__desc-text">
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt class="p-flow__desc-title">完成</dt>
-                <dd class="p-flow__desc-text">
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-              </dl>
+          </nav>
+        </header>
+      </div>
+      <!-- sidebar -->
+      <div class="content">
+        <main class="l-main">
+          <section class="p-hero">
+            <div class="p-hero__video">
+              <video
+                src="video/video.mp4"
+                loop
+                muted
+                autoplay
+                playsinline
+              ></video>
             </div>
-            <!-- p-flow__wrapper -->
-          </div>
-          <!-- p-flow__inner -->
-        </section>
-        <section class="p-contact">
-          <div class="p-contact__inner l-inner">
-            <h2 class="p-contact__title sub-title">お問い合わせ</h2>
-            <p>お問い合わせは下記からお願いいたします。</p>
+          </section>
+          <section class="p-project">
+            <div class="p-project__inner l-inner">
+              <h2 class="p-project__title sub-title">建築事例を紹介</h2>
+              <ul class="p-project__list">
+                <li class="p-project__item">
+                  <a href="#"
+                    ><img
+                      src="img/project1.jpg"
+                      alt="PROJECT_01"
+                    />PROJECT_01</a
+                  >
+                </li>
+                <li class="p-project__item">
+                  <a href="#"
+                    ><img
+                      src="img/project2.jpg"
+                      alt="PROJECT_02"
+                    />PROJECT_02</a
+                  >
+                </li>
+                <li class="p-project__item">
+                  <a href="#"
+                    ><img
+                      src="img/project3.jpg"
+                      alt="PROJECT_03"
+                    />PROJECT_03</a
+                  >
+                </li>
+                <li class="p-project__item">
+                  <a href="#"
+                    ><img
+                      src="img/project4.jpg"
+                      alt="PROJECT_04"
+                    />PROJECT_04</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="p-feature">
+            <div class="p-feature__inner l-inner">
+              <h2 class="p-feature__title sub-title">明るいHOUSEの特徴</h2>
+              <ul class="p-feature__list">
+                <li class="p-feature__item">
+                  <a href="#">design</a>
+                  <h3 class="p-feature__item-title">デザイン</h3>
+                  <p>テキストテキストテキスト</p>
+                </li>
+                <li class="p-feature__item">
+                  <a href="#">qualiy</a>
+                  <h3 class="p-feature__item-title">性能</h3>
+                  <p>テキストテキストテキスト</p>
+                </li>
+                <li class="p-feature__item">
+                  <a href="#">support</a>
+                  <h3 class="p-feature__item-title">サポート</h3>
+                  <p>テキストテキストテキスト</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="p-flow">
+            <div class="p-flow__inner l-inner">
+              <h2 class="p-flow__title sub-title">家ができるまでの流れ</h2>
+              <p>お問い合わせいただいてから、家が完成するまでの流れです。</p>
+              <div class="p-flow__wrapper">
+                <ol class="p-flow__step">
+                  <li class="p-flow__step-item">ヒアリング</li>
+                  <li class="p-flow__step-item">プラン提案</li>
+                  <li class="p-flow__step-item">契約</li>
+                  <li class="p-flow__step-item">着工</li>
+                  <li class="p-flow__step-item">完成</li>
+                </ol>
+                <dl class="p-flow__desc">
+                  <dt class="p-flow__desc-title">ヒアリング</dt>
+                  <dd class="p-flow__desc-text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </dd>
+                  <dt class="p-flow__desc-title">プラン提案</dt>
+                  <dd class="p-flow__desc-text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </dd>
+                  <dt class="p-flow__desc-title">契約</dt>
+                  <dd class="p-flow__desc-text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </dd>
+                  <dt class="p-flow__desc-title">着工</dt>
+                  <dd class="p-flow__desc-text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </dd>
+                  <dt class="p-flow__desc-title">完成</dt>
+                  <dd class="p-flow__desc-text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </dd>
+                </dl>
+              </div>
+              <!-- p-flow__wrapper -->
+            </div>
+            <!-- p-flow__inner -->
+          </section>
+          <section class="p-contact">
+            <div class="p-contact__inner l-inner">
+              <h2 class="p-contact__title sub-title">お問い合わせ</h2>
+              <p>お問い合わせは下記からお願いいたします。</p>
 
-            <ul class="p-contact__list">
-              <li class="p-contact__item">
-                <a href="#"
-                  ><img src="img/icon-document.png" alt="資料請求" />資料請求</a
-                >
-              </li>
-              <li class="p-contact__item">
-                <a href="#"
-                  ><img
-                    src="img/icon-seminar.png"
-                    alt="web
-                  説明会"
-                  />web説明会</a
-                >
-              </li>
-              <li class="p-contact__item">
-                <a href="#"
-                  ><img src="img/icon-talk.png" alt="個別相談" />個別相談</a
-                >
-              </li>
+              <ul class="p-contact__list">
+                <li class="p-contact__item">
+                  <a href="#"
+                    ><img
+                      src="img/icon-document.png"
+                      alt="資料請求"
+                    />資料請求</a
+                  >
+                </li>
+                <li class="p-contact__item">
+                  <a href="#"
+                    ><img
+                      src="img/icon-seminar.png"
+                      alt="web
+                説明会"
+                    />web説明会</a
+                  >
+                </li>
+                <li class="p-contact__item">
+                  <a href="#"
+                    ><img src="img/icon-talk.png" alt="個別相談" />個別相談</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- p-contact__inner -->
+          </section>
+        </main>
+        <footer id="footer" class="p-footer">
+          <nav class="p-footer__nav">
+            <ul class="p-footer__list">
+              <li class="p-footer__item"><a href="#">私たちについて</a></li>
+              <li class="p-footer__item"><a href="#">サービス</a></li>
+              <li class="p-footer__item"><a href="#">商品情報</a></li>
+              <li class="p-footer__item"><a href="#">展示会</a></li>
+              <li class="p-footer__item"><a href="#">暮らしの日記</a></li>
+              <li class="p-footer__item"><a href="#">会社概要</a></li>
             </ul>
-          </div>
-          <!-- p-contact__inner -->
-        </section>
-      </main>
-      <footer id="footer" class="p-footer">
-        <nav class="p-footer__nav">
-          <ul class="p-footer__list">
-            <li class="p-footer__item"><a href="#">私たちについて</a></li>
-            <li class="p-footer__item"><a href="#">サービス</a></li>
-            <li class="p-footer__item"><a href="#">商品情報</a></li>
-            <li class="p-footer__item"><a href="#">展示会</a></li>
-            <li class="p-footer__item"><a href="#">暮らしの日記</a></li>
-            <li class="p-footer__item"><a href="#">会社概要</a></li>
-          </ul>
-        </nav>
-        <small>Copyright &copy; 2021 Akarui HOUSE All Rights Reserved.</small>
-      </footer>
+          </nav>
+          <small>Copyright &copy; 2021 Akarui HOUSE All Rights Reserved.</small>
+        </footer>
+      </div>
+      <!-- content -->
     </div>
     <!-- container       -->
   </body>
