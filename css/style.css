@@ -39,7 +39,15 @@ img {
 .l-inner {
   width: 100%;
   max-width: 900px;
+  padding: 20px;
   margin: 0 auto;
+}
+
+.sub-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .header {
@@ -86,4 +94,14 @@ img {
   top: -200px;
   height: auto;
   z-index: -10;
+}
+
+.project {
+  background-color: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  color: #fff;
+}
+.project__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
