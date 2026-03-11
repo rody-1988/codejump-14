@@ -37,7 +37,7 @@ img {
   margin: 0 auto;
 }
 
-.p-footer {
+.footer {
   margin-top: auto;
   margin-left: 300px;
 }
@@ -60,15 +60,15 @@ img {
   padding-top: 40px;
   padding-bottom: 20px;
 }
-.l-sidebar .p-nav__item,
-.l-sidebar .p-sns__item {
+.l-sidebar .nav__item,
+.l-sidebar .sns__item {
   padding-bottom: 20px;
 }
-.p-hero__video {
+.hero__video {
   width: 100%;
   height: 100vh;
 }
-.p-hero__video video {
+.hero__video video {
   height: auto;
   z-index: -10;
 }/*# sourceMappingURL=style.css.map */
