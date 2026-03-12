@@ -39,15 +39,28 @@ img {
 .l-inner {
   width: 100%;
   max-width: 900px;
-  padding: 20px;
+  padding: 20px 20px 100px;
   margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .l-inner {
+    padding-bottom: 20px;
+  }
 }
 
 .sub-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 28px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
+}
+.sub-title::before, .sub-title::after {
+  content: "";
+  width: 25%;
+  border-top: 1px solid;
 }
 
 .header {
@@ -97,11 +110,47 @@ img {
 }
 
 .project {
-  background-color: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   color: #fff;
 }
 .project__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 40px;
+}
+.project__item {
+  border: 1px solid #fff;
+}
+.project__item a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.project__item a::after {
+  content: "";
+  box-shadow: 0 -30px 15px -1px #2e2e2e inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.project__item img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.project__item span {
+  position: absolute;
+  font-size: 12px;
+  bottom: 4px;
+  left: 4px;
+  color: #fff;
+  z-index: 2;
+}
+
+.feature {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
