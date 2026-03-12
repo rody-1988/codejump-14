@@ -153,4 +153,59 @@ img {
 .feature {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
+}
+.feature__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.feature__item {
+  font-size: 14px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+.feature__item a {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+@media screen and (max-width: 960px) {
+  .feature__item a {
+    width: 150px;
+    height: 150px;
+  }
+}
+.feature__item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+.feature__item a:hover::before {
+  left: 0;
+}
+.feature__item a span {
+  position: relative;
+  z-index: 2;
+}
+.feature__item-title {
+  font-weight: bold;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
