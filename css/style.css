@@ -212,6 +212,7 @@ img {
 
 .flow {
   background-color: #fff;
+  z-index: 2;
 }
 .flow__inner p {
   margin-bottom: 60px;
@@ -221,13 +222,21 @@ img {
   gap: 20px;
 }
 .flow__step {
-  list-style-type: decimal;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   text-align: center;
+  list-style-position: inside;
+  list-style-type: decimal;
 }
 .flow__step-item {
   width: 200px;
+  height: 80px;
   background-color: #414141;
   color: #fff;
   font-size: 14px;
+}
+.flow__desc {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

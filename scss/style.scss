@@ -246,6 +246,7 @@ img {
 // ===================================
 .flow {
   background-color: $color-sub;
+  z-index: 2;
 
   &__inner p {
     margin-bottom: 60px;
@@ -255,14 +256,22 @@ img {
     gap: 20px;
   }
   &__step {
-    list-style-type: decimal;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     text-align: center;
+    list-style-position: inside;
+    list-style-type: decimal;
     &-item {
       width: 200px;
+      height: 80px;
       background-color: #414141;
       color: $color-sub;
       font-size: 14px;
     }
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
   }
 }
