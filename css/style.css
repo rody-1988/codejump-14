@@ -224,19 +224,115 @@ img {
 .flow__step {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 0px;
   text-align: center;
   list-style-position: inside;
   list-style-type: decimal;
+  position: relative;
+}
+.flow__step::after {
+  content: "";
+  width: 50px;
+  height: 600px;
+  background-color: #ffdd00;
+  position: absolute;
+  top: 0;
+  left: 75px;
+  z-index: 1;
 }
 .flow__step-item {
   width: 200px;
   height: 80px;
+  line-height: 80px;
   background-color: #414141;
   color: #fff;
   font-size: 14px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+.flow__step-item::after {
+  content: "";
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  border-top: 30px solid #414141;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
 }
 .flow__desc {
   display: flex;
   flex-direction: column;
+  margin-left: 10%;
+  counter-reset: flow-count;
+}
+.flow__desc-title {
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 1px solid #333;
+  position: relative;
+  margin-bottom: 10px;
+}
+.flow__desc-title::before {
+  counter-increment: flow-count;
+  content: "" counter(flow-count);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #414141;
+  border-radius: 50%;
+  color: #fff;
+  top: 0;
+  left: -60px;
+}
+.flow__desc-text {
+  margin-bottom: 40px;
+}
+
+.contact {
+  background-color: #fff;
+}
+.contact p {
+  margin-bottom: 40px;
+}
+.contact__list {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.contact__item {
+  width: 33%;
+  text-align: center;
+  border: 1px solid #333;
+  align-items: center;
+}
+.contact__item a {
+  display: block;
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  transition: 0.1s;
+}
+.contact__item a:hover {
+  outline: 3px solid #333;
+}
+.contact__item a::after {
+  position: absolute;
+  content: "";
+  bottom: 4px;
+  right: 4px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #333;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
