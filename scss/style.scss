@@ -331,7 +331,7 @@ img {
       position: relative;
       overflow: hidden;
       z-index: 1;
-      
+
       &::before {
         content: "";
         position: absolute;
@@ -366,15 +366,15 @@ img {
 
   &__inner {
     padding-top: 100px;
-  
-  & p {
+
+    & p {
       margin-bottom: 60px;
     }
   }
   &__wrapper {
     display: flex;
     gap: 20px;
-    @include sp{
+    @include sp {
       flex-direction: column;
     }
   }
@@ -386,11 +386,10 @@ img {
     list-style-position: inside;
     list-style-type: decimal;
     position: relative;
-  
-    @include sp{
+
+    @include sp {
       width: 100%;
       align-items: center;
-      
     }
     &::after {
       content: "";
@@ -418,7 +417,7 @@ img {
       position: relative;
       z-index: 2;
       @include sp {
-        width: calc(100vw - 80px)
+        width: calc(100vw - 80px);
       }
       &::after {
         content: "";
@@ -436,8 +435,7 @@ img {
         @include sp {
           border-left: calc(50vw - 40px) solid transparent;
           border-right: calc(50vw - 40px) solid transparent;
-          
-        }  
+        }
       }
     }
   }
@@ -483,7 +481,7 @@ img {
 // ===================================
 .contact {
   background-color: $color-sub;
-  &__inner{
+  &__inner {
     padding-top: 0;
   }
   p {
@@ -497,7 +495,6 @@ img {
     @include sp {
       flex-direction: column;
       align-items: center;
-      
     }
   }
   &__item {
@@ -562,7 +559,7 @@ img {
   right: 20px;
   bottom: 20px;
   z-index: 100;
-  
+
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s; // ふわっと出すための時間
@@ -576,20 +573,17 @@ img {
   justify-content: center;
   align-items: center;
 
-  &::after{
+  &::after {
     content: "";
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #fff;
-
-
   }
   // ★ JSでこのクラスがついたら表示
   &.is-show {
     opacity: 1;
     visibility: visible;
   }
-
 
   a {
     display: block;

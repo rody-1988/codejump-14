@@ -20,9 +20,8 @@ mask.addEventListener("click", function () {
 //メニューのリンク押してもきえる
 const navLinks = document.querySelectorAll(".header-nav a");
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-
     hamburger.classList.remove("is-active");
     nav.classList.remove("is-active");
     mask.classList.remove("is-active");
@@ -32,24 +31,24 @@ navLinks.forEach(link => {
 // トップに戻る
 
 // id　#to-Topを探す
-const toTop = document.querySelector('#to-top');
+const toTop = document.querySelector("#to-top");
 
 // スクロールの監視
-window.addEventListener('scroll', ()=> {
+window.addEventListener("scroll", () => {
   // 700px 以上スクロールしたら、クラスをつける
   if (window.scrollY > 700) {
-    toTop.classList.add('is-show');
+    toTop.classList.add("is-show");
   } else {
     // 700px 未満ならクラスを外す
-    toTop.classList.remove('is-show')
+    toTop.classList.remove("is-show");
   }
 });
 
-toTop.addEventListener('click', (e) => {
+toTop.addEventListener("click", (e) => {
   e.preventDefault();
 
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 });
