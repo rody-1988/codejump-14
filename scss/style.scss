@@ -373,7 +373,6 @@ img {
   }
   &__wrapper {
     display: flex;
-    gap: 20px;
     @include sp {
       flex-direction: column;
     }
@@ -416,6 +415,13 @@ img {
       margin-bottom: 60px;
       position: relative;
       z-index: 2;
+
+      &:last-of-type{
+        margin-bottom: 0;
+        @include sp{
+          margin-bottom: 60px;
+        }
+      }
       @include sp {
         width: calc(100vw - 80px);
       }
@@ -583,9 +589,5 @@ img {
   &.is-show {
     opacity: 1;
     visibility: visible;
-  }
-
-  a {
-    display: block;
   }
 }

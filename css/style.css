@@ -330,7 +330,6 @@ img {
 }
 .flow__wrapper {
   display: flex;
-  gap: 20px;
 }
 @media screen and (max-width: 960px) {
   .flow__wrapper {
@@ -379,6 +378,14 @@ img {
   margin-bottom: 60px;
   position: relative;
   z-index: 2;
+}
+.flow__step-item:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 960px) {
+  .flow__step-item:last-of-type {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (max-width: 960px) {
   .flow__step-item {
@@ -537,7 +544,4 @@ img {
 .to-top.is-show {
   opacity: 1;
   visibility: visible;
-}
-.to-top a {
-  display: block;
 }/*# sourceMappingURL=style.css.map */
